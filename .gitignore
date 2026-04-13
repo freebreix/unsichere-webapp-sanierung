@@ -1,0 +1,21 @@
+# Abhängigkeiten
+node_modules/
+
+# Datenbank
+backend/users.db
+backend/users.db-shm
+backend/users.db-wal
+
+# Logdateien
+backend/access.log
+*.log
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+PROBLEME.md

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeineApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Willkommen bei MeineApp</h1>
+
+  <section id="register">
+    <h2>Registrierung</h2>
+    <form onsubmit="register(); return false;">
+      <input type="text" id="username" placeholder="Benutzername" required>
+      <input type="email" id="email" placeholder="E-Mail" required>
+      <input type="password" id="password" placeholder="Passwort" required>
+      <input type="date" id="birthdate" placeholder="Geburtsdatum">
+      <input type="text" id="address" placeholder="Adresse">
+      <input type="tel" id="phone" placeholder="Telefonnummer">
+      <input type="text" id="creditcard" placeholder="Kreditkartennummer">
+      <input type="text" id="health_info" placeholder="Gesundheitliche Einschränkungen (optional)">
+      <label>
+        <input type="checkbox" id="newsletter" checked>
+        Ich möchte den Newsletter und Werbeangebote erhalten
+      </label>
+      <label>
+        <input type="checkbox" id="terms" required>
+        Ich akzeptiere die AGB
+      </label>
+      <button type="submit">Registrieren</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form onsubmit="login(); return false;">
+      <input type="email" id="loginEmail" placeholder="E-Mail">
+      <input type="password" id="loginPassword" placeholder="Passwort">
+      <button type="submit">Einloggen</button>
+    </form>
+    <p id="loginStatus"></p>
+  </section>
+
+  <section id="commentSection">
+    <h2>Kommentare</h2>
+    <textarea id="commentText" placeholder="Dein Kommentar..."></textarea>
+    <button onclick="postComment()">Kommentar senden</button>
+    <div id="comments"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

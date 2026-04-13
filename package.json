@@ -1,0 +1,13 @@
+{
+  "name": "unsichere-webapp-sanierung",
+  "version": "1.0.0",
+  "description": "Fullstack-App mit absichtlichen DSGVO- und Sicherheitsproblemen als Lernaufgabe",
+  "engines": {
+    "node": ">=18 <24"
+  },
+  "scripts": {
+    "install": "cd backend && npm install",
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm start"
+  }
+}
